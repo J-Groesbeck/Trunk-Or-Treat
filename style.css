@@ -1,0 +1,61 @@
+* {
+    z-index: 1;
+}
+
+.rellax {
+    width: 20vw;
+    height: 20vw;
+    background-position: center center !important;
+    background-size: cover;
+    position: absolute;
+    z-index: 1 !important;
+}
+
+#img1 {
+    background-image: url(imgs/img1.png);
+    left: 25vw;
+}
+
+#img2 {
+    background-image: url(imgs/img2.png);
+}
+
+#img3 {
+    background-image: url(imgs/img3.png);
+}
+
+#img4 {
+    background-image: url(imgs/img4.png);
+}
+
+#img5 {
+    background-image: url(imgs/img5.png);
+}
+
+#img6 {
+    background-image: url(imgs/img6.png);
+}
+
+#img7 {
+    background-image: url(imgs/img7.png);
+}
+
+#img8 {
+    background-image: url(imgs/img8.png);
+}
+
+#img9 {
+    background-image: url(imgs/img9.png);
+}
+
+#img10 {
+    background-image: url(imgs/img10.png);
+}
+
+#img11 {
+    background-image: url(imgs/img11.png);
+}
+
+#img12 {
+    background-image: url(imgs/img12.png);
+}
