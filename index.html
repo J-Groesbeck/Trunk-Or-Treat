@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="#">MHS Trunk or Treat</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,9 +24,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto d-flex flex-row">
-                        <a class="nav-link active" onclick="document.getElementById('showcase').scrollIntoView();">Trunk
+                        <a class="nav-link active pointer"
+                            onclick="document.getElementById('showcase').scrollIntoView();">Trunk
                             Showcase</a>
-                        <a class="nav-link active"
+                        <a class="nav-link active pointer"
                             onclick="document.getElementById('schedule').scrollIntoView();">Scheduling</a>
                     </div>
                 </div>
@@ -34,26 +35,78 @@
         </nav>
     </header>
     <main>
-        <div id="img1" class="rellax" data-rellax-speed="10"></div>
-        <div id="img2" class="rellax" data-rellax-speed="-3"></div>
-        <div id="img3" class="rellax" data-rellax-speed="6"></div>
-        <div id="img4" class="rellax" data-rellax-speed="2"></div>
-        <div id="img5" class="rellax" data-rellax-speed="-8"></div>
-        <div id="img6" class="rellax" data-rellax-speed="-4"></div>
-        <div id="img7" class="rellax" data-rellax-speed="-10"></div>
-        <div id="img8" class="rellax" data-rellax-speed="6"></div>
-        <div id="img9" class="rellax" data-rellax-speed="4"></div>
-        <div id="img10" class="rellax" data-rellax-speed="8"></div>
-        <div id="img11" class="rellax" data-rellax-speed="-1"></div>
-        <div id="img12" class="rellax" data-rellax-speed="-7"></div>
         <div class="container">
-            <div class="row">
+            <div class="row my-1">
                 <div class="col-12 text-center">
-                    <img src="imgs/logo.png">
+                    <h1 class="title"><span class="orange">MARLBORO HIGH SCHOOL</span><br><span class="purple">TRUNK OR TREAT</span></h1>
                 </div>
-                <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, magni? Maiores
-                    sunt tempore suscipit repellendus praesentium repudiandae rem cum dolor itaque aliquam perspiciatis,
-                    voluptate ipsum placeat, iusto et totam enim.</div>
+            </div>
+            <div class="row background-color">
+                <div class="col-4 py-2"><img class="w-100 border-radius" src="imgs/activity.png"></div>
+                <div class="col-5 py-2 text-center">
+                    <h5 id="details">The MHS Trunk or Treat is an exciting event put on by our Peer Leaders, where
+                        anyone can bring
+                        their kids to have a great time! It will be taking place on October 29th (see more details at
+                        the bottom of the page), and admission is free...</h5>
+                    <button id="showMore" class="btn btn-primary">Show More</button>
+                    <button id="showLess" class="btn btn-primary hide">Show Less</button>
+                </div>
+                <div class="col-3 py-2"><img class="w-100 border-radius" src="imgs/activity2.png"></div>
+            </div>
+        </div>
+        <div id="showcase" class="container-fluid" style="margin-bottom: 160vh;">
+            <div id="img1" class="rellax" data-rellax-speed="-6">
+                <h1 class="hide text-center">Theme:<br>The Wizard of Oz</h1>
+            </div>
+            <div id="img2" class="rellax" data-rellax-speed="2">
+                <h1 class="hide text-center">Theme:<br>Fruit Ninja</h1>
+            </div>
+            <div id="img3" class="rellax" data-rellax-speed="-2">
+                <h1 class="hide text-center">Theme:<br>Jurassic Park</h1>
+            </div>
+            <div id="img4" class="rellax" data-rellax-speed="5">
+                <h1 class="hide text-center">Theme:<br>Paw Patrol</h1>
+            </div>
+            <div id="img5" class="rellax" data-rellax-speed="-7">
+                <h1 class="hide text-center">Theme:<br>Star Wars</h1>
+            </div>
+            <div id="img6" class="rellax" data-rellax-speed="-3">
+                <h1 class="hide text-center">Theme:<br>Candy Land</h1>
+            </div>
+            <div id="img7" class="rellax" data-rellax-speed="-4">
+                <h1 class="hide text-center">Theme:<br>Mario Bros.</h1>
+            </div>
+            <div id="img8" class="rellax" data-rellax-speed="-1">
+                <h1 class="hide text-center">Theme:<br>Dr. Seuss</h1>
+            </div>
+            <div id="img9" class="rellax" data-rellax-speed="10">
+                <h1 class="hide text-center">Theme:<br>Alice in Wonderland</h1>
+            </div>
+            <div id="img10" class="rellax" data-rellax-speed="-3">
+                <h1 class="hide text-center">Theme:<br>Harry Potter</h1>
+            </div>
+            <div id="img11" class="rellax" data-rellax-speed="-8">
+                <h1 class="hide text-center">Theme:<br>Toy Story</h1>
+            </div>
+            <div id="img12" class="rellax" data-rellax-speed="4">
+                <h1 class="hide text-center">Theme:<br>Pirates of the Caribbean</h1>
+            </div>
+        </div>
+        <div id="schedule" class="container mb-5">
+            <div class="row">
+                <div id="schedule1" class="col-7 text-center background-color">
+                    <h1 id="view1" class="pointer">Click Here to<br> View Event Calander<br>for Guests</h1>
+                    <iframe id="cal1" class="hide w-100"
+                        src="https://calendar.google.com/calendar/embed?src=c_3cbb69056a913d27990bc1a0bd03ef108b860f22e35d621489048c1f9777c090%40group.calendar.google.com&ctz=America%2FNew_York&dates=20241027/20241102&mode=WEEK"
+                        style="border: 0" height="350" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="col-1"></div>
+                <div id="schedule2" class="col-4 text-center background-color">
+                    <h1 id="view2" class="pointer">Click Here to<br> View Event Calander for Participants</h1>
+                    <iframe id="cal2" class="hide w-100"
+                        src="https://calendar.google.com/calendar/embed?src=c_112c349a8f6c062ac3a8f5c50a44bcc5c0ca34a6581b6ef34ada600b01c572be%40group.calendar.google.com&ctz=America%2FNew_York&dates=20241029/20241030&mode=AGENDA"
+                        style="border: 0" height="350" frameborder="0" scrolling="no"></iframe>
+                </div>
             </div>
         </div>
     </main>

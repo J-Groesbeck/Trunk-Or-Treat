@@ -1,4 +1,58 @@
+@font-face {
+    font-family: 'Halloween-Spooky';
+    src: url('fonts/Halloween-Spooky.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-brand, .nav-link {
+    font-family: 'Halloween-Spooky', sans-serif !important;
+}
+
+.title {
+    font-family: 'Halloween-Spooky', sans-serif !important;
+    font-size: 9rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+.orange {
+    color: #f7941e;
+}
+
+.purple {
+    color: #b99bd4;
+}
+
 * {
+    color: white;
+}
+
+body {
+    background-image: url(imgs/bg-maybe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    --bs-navbar-active-color: white !important;
+    --bs-navbar-brand-color: white !important;
+    --bs-navbar-brand-hover-color: rgb(206, 206, 206) !important;
+    background-color: black !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.container-fluid {
+    position: relative;
     z-index: 1;
 }
 
@@ -8,54 +62,118 @@
     background-position: center center !important;
     background-size: cover;
     position: absolute;
-    z-index: 1 !important;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.rellax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-position: center center;
+    background-size: cover;
+    filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.rellax h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.blurry::before {
+    opacity: 1;
+}
+
 
 #img1 {
     background-image: url(imgs/img1.png);
-    left: 25vw;
+    left: 3vw;
+    top: -20vh;
 }
 
 #img2 {
     background-image: url(imgs/img2.png);
+    left: 9vw;
+    top: 10vh;
 }
 
 #img3 {
     background-image: url(imgs/img3.png);
+    left: 10vw;
+    top: 55vh;
 }
 
 #img4 {
     background-image: url(imgs/img4.png);
+    left: 17vw;
+    top: 90vh;
 }
 
 #img5 {
     background-image: url(imgs/img5.png);
+    left: 21vw;
+    top: 0vh;
 }
 
 #img6 {
     background-image: url(imgs/img6.png);
+    left: 32vw;
+    top: 20vh;
 }
 
 #img7 {
     background-image: url(imgs/img7.png);
+    left: 44vw;
+    top: -15vh;
 }
 
 #img8 {
     background-image: url(imgs/img8.png);
+    left: 48vw;
+    top: 40vh;
 }
 
 #img9 {
     background-image: url(imgs/img9.png);
+    left: 54vw;
+    top: 80vh;
 }
 
 #img10 {
     background-image: url(imgs/img10.png);
+    left: 65vw;
+    top: 32vh;
 }
 
 #img11 {
     background-image: url(imgs/img11.png);
+    left: 72vw;
+    top: -10vh;
 }
 
 #img12 {
     background-image: url(imgs/img12.png);
+    left: 77vw;
+    top: 75vh;
+}
+
+.background-color {
+    background-color: rgba(0, 0, 0, 0.842) !important;
+    border-radius: 8px;
+}
+
+.border-radius {
+    border-radius: 5px;
 }
