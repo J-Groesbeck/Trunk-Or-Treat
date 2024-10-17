@@ -15,6 +15,12 @@
     text-shadow: 5px 5px 5px black;
 }
 
+.mobile-title {
+    font-family: 'Halloween-Spooky', sans-serif !important;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+}
+
 .orange {
     color: #f7941e;
 }
@@ -67,6 +73,11 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.rellax2 {
+    width: 50vw !important;
+    height: 50vw !important;
 }
 
 .rellax::before {
@@ -167,6 +178,78 @@ body {
     background-image: url(imgs/img12.png);
     left: 77vw;
     top: 75vh;
+}
+
+#img13 {
+    background-image: url(imgs/img1.png);
+    left: 1vw;
+    top: 84vh;
+}
+
+#img14 {
+    background-image: url(imgs/img2.png);
+    left: 5vw;
+    top: 17vh;
+}
+
+#img15 {
+    background-image: url(imgs/img3.png);
+    left: 11vw;
+    top: 66vh;
+}
+
+#img16 {
+    background-image: url(imgs/img4.png);
+    left: 15vw;
+    top: 12vh;
+}
+
+#img17 {
+    background-image: url(imgs/img5.png);
+    left: 22vw;
+    top: 43vh;
+}
+
+#img18 {
+    background-image: url(imgs/img6.png);
+    left: 27vw;
+    top: 78vh;
+}
+
+#img19 {
+    background-image: url(imgs/img7.png);
+    left: 28vw;
+    top: 53vh;
+}
+
+#img20 {
+    background-image: url(imgs/img8.png);
+    left: 33vw;
+    top: 34vh;
+}
+
+#img21 {
+    background-image: url(imgs/img9.png);
+    left: 37vw;
+    top: 60vh;
+}
+
+#img22 {
+    background-image: url(imgs/img10.png);
+    left: 39vw;
+    top: 88vh;
+}
+
+#img23 {
+    background-image: url(imgs/img11.png);
+    left: 42vw;
+    top: 29vh;
+}
+
+#img24 {
+    background-image: url(imgs/img12.png);
+    left: 48vw;
+    top: 73vh;
 }
 
 .background-color {
