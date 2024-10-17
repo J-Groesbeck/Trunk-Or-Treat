@@ -25,9 +25,9 @@ $('#showLess').on('click', function() {
 var rellax = new Rellax('.rellax');
 
 $('.rellax').on('mouseover', function () {
-    $(this).addClass('blurry').children().show();
+    $(this).css('z-index', '9').addClass('blurry').children().show();
 }).on('mouseleave', function () {
-    $(this).removeClass('blurry').children().hide();
+    $(this).css('z-index', '1').removeClass('blurry').children().hide();
 });
 
 let cal1Opened = false
